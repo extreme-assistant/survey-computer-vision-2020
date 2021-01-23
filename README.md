@@ -1,6 +1,6 @@
 # survey-computer-vision
 
-##计算机视觉综述论文分方向整理（持续更新）<br>
+## 计算机视觉综述论文分方向整理（持续更新）<br>
 
 ## 目标检测（object detection）
 
