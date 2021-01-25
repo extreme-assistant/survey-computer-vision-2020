@@ -159,9 +159,9 @@
 
 本文共梳理**143篇**相关文章，由克什米尔大学的学者发布。目标检测或定位是从粗略到精细的数字图像推断的增量步骤。它不仅提供图像对象的类别，而且还提供已分类图像对象的位置。该位置以边界框或质心的形式给出。语义分割可通过预测输入图像中每个像素的标签来进行精细推断。每个像素根据其所在的对象类别进行标记。为进一步发展，实例分割为属于同一类的对象的单独实例提供了不同的标签。因此，实例分割可以被定义为同时解决对象检测和语义分割问题的技术。在这份关于实例分割的调查论文中，讨论了实例分割的背景，问题，技术，演变，流行的数据集，相关技术以及最新范围。本文为那些希望在实例分割领域进行研究的人提供了宝贵的信息。<br>
 
-* [对象识别的演变]((https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzfttve4j30rs0gygos.jpg))从粗略推断到细粒度推断：（a）图像分类（b）对象检测或定位（c）语义分割（d）实例分割<br>
+* [对象识别的演变](https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzfttve4j30rs0gygos.jpg)从粗略推断到细粒度推断：（a）图像分类（b）对象检测或定位（c）语义分割（d）实例分割<br>
 * [实例分割中重要技术的时间表](https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzgbzvqgj30ro0a0jrn.jpg)<br>
-* [PANet框架（a）FPN主干（b）自下而上的路径扩充（c）自适应功能池（d）盒支（e）全连接融合](https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzgn10rlj30s40bq755.jpg)<br>
+* [PANet框架](https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzgn10rlj30s40bq755.jpg)（a）FPN主干（b）自下而上的路径扩充（c）自适应功能池（d）盒支（e）全连接融合<br>
 * [Microsoft COCO数据集上值得注意的实例细分工作](https://tva1.sinaimg.cn/large/006C3FgEgy1gmxzgy7gtbj30ro0e8q49.jpg)<br>
 
 
