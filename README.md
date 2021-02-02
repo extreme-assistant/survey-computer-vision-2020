@@ -447,3 +447,46 @@ H＆E染色的图像类型不同，（a）是正常组织，（b）是良性异�
 
 [使用常规机器学习方法在监督训练下进行视网膜血管分割的示意图](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4lefa6d5j30s20mggoe.jpg)
 
+
+<br><br> 
+
+<a name="4"/> 
+
+## 目标跟踪
+
+### 综述一
+
+【1】 Correlation Filter for UAV-Based Aerial Tracking: A Review and Experimental Evaluation<br>
+
+**标题**:相关过滤无人机空中跟踪技术综述与实验评估<br>
+**作者**： Changhong Fu, Geng Lu<br>
+**链接**：https://arxiv.org/abs/2010.06255<br>
+
+
+本文共梳理**94篇**相关文献，由**同济大学学者**提出。配备有视觉跟踪方法的基于无人机（UAV）的遥感系统已被广泛用于航空，导航，农业，运输和公共安全等。如上所述，基于UAV的航空跟踪平台已经从研究阶段逐步发展到实际应用阶段，成为未来主要的航空遥感技术之一。但是，由于现实世界中充满挑战的情况，无人机的机械结构（特别是在强风条件下）的振动以及有限的计算资源，准确性，鲁棒性和高效率对于机载跟踪方法都是至关重要的。最近，基于区分相关滤波器（DCF）的跟踪器以其高计算效率和在单个CPU上具有吸引力的鲁棒性而引人注目，并在UAV视觉跟踪社区中蓬勃发展。本文首先概括了基于DCF的跟踪器的基本框架，在此基础上，根据其解决各种问题的创新，有序总结了20种基于DCF的最新跟踪器。此外，对各种流行的无人机跟踪基准进行了详尽和定量的实验，即UAV123，UAV123_10fps，UAV20L，UAVDT，DTB70和VisDrone2019-SOT。<br>
+
+在无人机追踪基准\[UAVDT\]下，[基于DCF的追踪器和深度追踪器的性能比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o0bz0p6j30s20aitab.jpg)。 图例中带有\*的跟踪器是在GPU上运行的结果，该GPU利用GPU加速了卷积和池计算。 当跟踪速度在单个CPU上达到红色虚线（30FPS）时，就可以满足无人机实时跟踪的要求。<br>
+
+[无人机平台上基于DCF的方法的一般跟踪结构](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o0n7901j30sk0gw42f.jpg)，可分为训练阶段，模型更新和检测阶段。<br>
+
+[六个基准测试中的原始属性（在线下）和新属性之间的对应关系](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o0vwxu6j30s00d4t93.jpg)，以及每个基准测试对每个新属性的序列号贡献<br>
+
+<br><br>
+
+### 综述二
+
+【2】 Multi-modal Visual Tracking: Review and Experimental Comparison<br>
+
+**标题**：多模态视觉跟踪：综述与实验比较<br>
+**作者**：Pengyu Zhang,Dong Wang,Huchuan Lu<br>
+**链接**：https://arxiv.org/abs/2012.04176<br>
+
+本文共梳理**127篇**相关文献。视觉对象跟踪作为计算机视觉中的一项基本任务，近年来引起了很多关注。为了将跟踪器扩展到更广泛的应用范围，研究人员引入了来自多种模式的信息来处理特定的场景，这是新兴方法和基准的有前途的研究前景。 为了全面回顾多模式跟踪，本文从不同方面总结了多模式跟踪算法，特别是在统一分类法中的可见深度（RGB-D）跟踪和可见热（RGB-T）跟踪，提供了有关基准和挑战的详细描述。 此外，本文进行了广泛的实验，以分析跟踪器在五个数据集上的有效性：PTB，VOT19-RGBD，GTOT，RGBT234和VOT19-RGBT。<br>
+
+[早期融合（EF）和晚期融合（LF）的工作流程](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o2enfm6j30sg09eglx.jpg)。基于EF的方法进行特征融合并共同建模； 而基于LF的方法旨在分别为每个模态建模，然后组合其决策<br>
+
+[OAPF框架](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o2kgl38j30s40bq76h.jpg)。应用了带有遮挡处理的粒子滤波方法，其中遮挡模型是针对模板模型构造的。 当目标被遮挡时，遮挡模型用于预测位置而无需更新模板模型<br>
+
+[JMMAC的工作流程](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o2puy9jj30s60aeac6.jpg)。基于CF的跟踪器用于对外观提示进行建模，同时考虑了相机和目标运动，从而获得了可观的性能。
+
+
