@@ -7,6 +7,7 @@
 * [2.图像分割](#2)<br>
 * [3.医学影像](#3)<br>
 * [4.目标跟踪](#4)<br>
+* [5.人脸](#5)<br>
 
 <br><br>
 
@@ -489,5 +490,210 @@ H＆E染色的图像类型不同，（a）是正常组织，（b）是良性异�
 [OAPF框架](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o2kgl38j30s40bq76h.jpg)。应用了带有遮挡处理的粒子滤波方法，其中遮挡模型是针对模板模型构造的。 当目标被遮挡时，遮挡模型用于预测位置而无需更新模板模型<br>
 
 [JMMAC的工作流程](https://tva1.sinaimg.cn/large/006C3FgEgy1gn4o2puy9jj30s60aeac6.jpg)。基于CF的跟踪器用于对外观提示进行建模，同时考虑了相机和目标运动，从而获得了可观的性能。
+
+<br><br>  
+
+<a name="5"/>
+
+## 人脸识别
+
+### 综述一
+**The Elements of End-to-end Deep Face Recognition: A Survey of Recent Advances**<br>
+**标题：** 端到端深度人脸识别原理：最新进展综述<br>
+**作者：** Hang Du, Tao Mei<br>
+**链接：** https://arxiv.org/abs/2009.13290<br>
+
+本文共梳理371篇相关文献。随着深度卷积神经网络和大规模数据集的最新发展，深度人脸识别取得了显着进展，并已广泛应用于现实应用中。给定自然图像或视频帧作为输入，端到端深脸识别系统将输出脸部特征以进行识别。为此，整个系统通常由三个关键要素构成：面部检测，面部预处理和面部表示。这三个要素都由深度卷积神经网络实现。在本文中，由于蓬勃发展的深度学习技术极大地提高了它们的能力，因此我们对端到端深度人脸识别各个元素的最新进展进行了全面的调查，分别回顾了基于深度学习的每个元素的进展，涵盖了许多方面，例如最新的算法设计，评估指标，数据集，性能比较，存在的挑战以及有希望的未来研究方向。<br>
+
+[端到端深度人脸识别系统的标准管道](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbjnryhllj30u209smyy.jpg)<br>
+
+
+[代表性人脸检测方法的发展](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbjogybxsj30ua06qdg8.jpg)<br>
+
+<br><br>
+
+### 综述二
+
+**Face Image Quality Assessment: A Literature Survey**<br>
+**标题：** 人脸图像质量评价的文献综述<br>
+**作者：** Torsten Schlett, Christoph Busch<br>
+**链接：** https://arxiv.org/abs/2009.01103<br>
+
+
+本文共梳理173篇相关文献。人脸分析和识别系统的性能取决于所采集人脸数据的质量，该质量受众多因素影响。因此，根据生物统计实用程序自动评估面部数据的质量对于过滤掉低质量的数据很有用。本文概述了在面部生物识别技术框架中的面部质量评估文献，重点是基于可见波长面部图像的面部识别，而不是例如深度或红外质量评估，观察到了基于深度学习的方法的趋势，包括最近方法之间的显着概念差异。<br>
+
+[典型的FQA过程](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbjr838rsj30j80660t2.jpg)：对人脸图像进行预处理，然后应用FQAA，从而输出标量质量得分，并据此做出决策。<br>
+
+<br><br>
+
+### 综述三
+
+**The Use of AI for Thermal Emotion Recognition: A Review of Problems and  Limitations in Standard Design and Data**<br>
+**标题:** 人工智能在热情感识别中的应用：标准设计和数据中的问题和限制综述<br>
+**作者：** Catherine Ordun,  Sanjay Purushotham<br>
+**链接：** https://arxiv.org/abs/2009.10589<br>
+
+随着对Covid-19放映的热成像越来越关注，公共部门可能会相信有新的机会将热学用作计算机视觉和AI的方式。自九十年代末以来，一直在进行热生理学研究。这项研究位于医学，心理学，机器学习，光学和情感计算的交叉领域。本文回顾了用于面部表情识别的热成像与RGB成像的已知因素。热成像可能会在RGB上为计算机视觉提供一种半匿名的方式，这种方式已被面部识别中的误用所困扰。但是，要想将热图像用作任何以人为中心的AI任务的来源，过渡并不容易，并且要依赖于跨多个人口统计的高保真度数据源的可用性和全面的验证。本文使读者简要回顾了热FER中的机器学习以及为AI训练收集和开发热FER数据的局限性。<br>
+
+[静止（向上）和疲劳（向下）面部的RGB，近红外和热图像。 ](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbjzm2nq8j30b209u0uf.jpg)在热图像中，较暗的像素对应于较冷的像素，较浅的像素对应于较热的像素。<br>
+
+[长波IR的波长范围为8 µm至15 µm](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk0ogsm8j30fm06qmx9.jpg)<br>
+
+<br><br>
+
+### 综述四
+
+**A Survey On Anti-Spoofing Methods For Face Recognition with RGB Cameras of Generic Consumer Devices**<br>
+**标题:** 通用消费类设备RGB摄像头人脸识别反欺骗方法综述<br>
+**作者：** Zuheng Ming, Jean-Christophe Burie<br>
+**链接：** https://arxiv.org/abs/2010.04145<br>
+
+本文共梳理191篇相关文献。基于面部识别的生物识别系统的广泛部署已使面部表情攻击检测（面部反欺骗）成为一个越来越关键的问题。本文彻底研究了在过去的二十年中仅需要普通消费类设备的RGB摄像头的面部表情攻击检测（PAD）方法。本文介绍了现有人脸PAD方法的面向攻击场景的类型，并回顾了50多种最新的人脸PAD方法及其相关问题，描述了面部PAD领域的主要挑战，演变和当前趋势，并提供了对其未来研究的见识。<br>
+
+
+[面部表情攻击的类型](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk3fi3tmj30ye0fut9k.jpg)<br>
+
+
+[每个PAD方法子类型旨在检测的Presentation Attacks（PA）的类型](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk4ellmcj30s60cut9n.jpg)<br>
+
+
+[基于局部rPPG相关的方法的框架](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk59cl36j30zq0eytak.jpg)<br>
+
+<br><br>
+
+### 综述五
+
+**An Overview of Facial Micro-Expression Analysis: Data, Methodology and  Challenge**<br>
+**标题：** 人脸微表情分析综述：数据、方法学与挑战<br>
+**作者：** Hong-Xia Xie,Ling Lo,Hong-Han Shuai,Wen-Huang Cheng<br>
+**链接：** https://arxiv.org/abs/2012.11307<br>
+
+本文共梳理205篇相关文献。面部微表情表示在情感交流过程中出现的短暂而微妙的面部运动。与宏表达式相比，由于时间跨度短且粒度变化小，因此微表达式的分析更具挑战性。近年来，微表情识别（MER）引起了很多关注，因为它可以使广泛的应用受益，例如，警察审讯，临床诊断，抑郁症分析和业务谈判。本文提供了全新的概述，以讨论当今有关MER任务的新研究方向和挑战。本文从三个新方面回顾了MER方法：从宏观到微观的适应，基于关键顶点帧的识别以及基于面部动作单元的识别。此外，为了缓解有限的和有偏差的ME数据的问题，对合成数据的生成进行了调查，以丰富微表达数据的多样性。<br>
+
+[此调查的组织结构是根据通用MER管道进行的](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk8fmtaij31000c0wge.jpg)<br>
+
+[TSNNLF中用于MER的2D CNN和3D CNN的组合结构](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbk9c1jtfj30ig08cgm4.jpg)<br>
+
+<br><br>
+
+### 综述六
+
+**Survey on 3D face reconstruction from uncalibrated images**<br>
+**标题:** 基于未标定图像的三维人脸重建技术综述<br>
+**作者：** Araceli Morales, Federico M. Sukno<br>
+**链接：** https://arxiv.org/abs/2011.05740<br>
+
+本文共梳理203篇相关文献。近来，许多注意力集中在将3D数据合并到面部分析及其应用中。尽管提供了面部的更准确表示，但3D面部图像的获取要比2D图片更为复杂。在开发系统上投入了大量的精力后，这些系统可以从未经校准的2D图像重建3D人脸。然而，从3D到2D的面部重建问题是不适的，因此需要先验知识来限制解决方案空间。本文回顾了过去十年中的3D人脸重建方法，重点介绍了仅使用在不受控制的条件下捕获的2D图片的方法。本文基于用于添加先验知识的技术对提出的方法进行分类，考虑了三种主要策略，即统计模型拟合，光度法和深度学习，并分别对其进行了回顾。此外，鉴于统计3D面部模型作为先验知识的相关性，本文还解释了构建过程并提供了可公开获得的3D面部模型的完整列表。<br>
+
+
+[可用的3DMM的特征](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkc0jyizj31300aajrq.jpg)<br>
+
+<br><br>
+
+### 综述七
+
+**DeepFakes and Beyond: A Survey of Face Manipulation and Fake Detection**<br>
+**标题：** DeepFakes：面部操纵和伪造检测综述<br>
+**作者：** Ruben Tolosana, Javier Ortega-Garcia<br>
+**链接：** https://arxiv.org/abs/2001.00179<br>
+
+
+本文梳理了105篇相关文献。本文对操纵人脸的图像技术（包括DeepFake方法）以及检测此类技术的方法进行了全面综述。论述了四种类型的面部操作：全脸合成、面部身份交换（DeepFakes）、面部属性操作以及面部表情操作。<br>
+
+
+[每个面部操作组的真实和伪造示例](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkjekyelj312c0uetiv.jpg)<br>
+
+<br><br>
+
+### 综述八
+
+**Deep Learning Based Single Sample Per Person Face Recognition: A Survey**<br>
+**标题：** 基于深度学习的单样本人脸识别研究综述<br>
+**作者：** Delong Chen,  Zewen Li<br>
+**链接：** https://arxiv.org/abs/2006.11395![006C3FgEgy1gnbkoa0ujxj313009sdg8](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkoa0ujxj313009sdg8.jpg)<br>
+
+本文共梳理62篇相关文献。在某些实际情况下，训练集中的每个身份只有一个样本。这种情况称为每人单样本（SSPP），这对有效训练深度模型提出了巨大挑战。为了解决该问题并释放深度学习的全部潜力，近年来已经提出了许多基于深度学习的SSPP人脸识别方法。对于基于SSPP的传统方法的人脸识别方法已经进行了几项全面的调查，但是很少涉及基于新兴深度学习的方法。本文将重点放在这些深层方法上，将它们分类为虚拟样本方法和通用学习方法。在虚拟样本方法中，将生成虚拟人脸图像或虚拟人脸特征，以利于深度模型的训练。在通用学习方法中，使用了额外的多样本通用集。在常规学习方法部分的分析中，涉及传统方法和深度特征合并，损失函数改进和网络结构改进的工作。<br>
+
+
+[研究领域之间的关系](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkpba6aaj30i204yq2v.jpg)<br>
+
+[虚拟人脸图像和特征生成方法图](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkpx5ey2j30jc08q0st.jpg)<br>
+
+<br><br>
+
+### 综述九
+
+**A survey of face recognition techniques under occlusion**<br>
+**标题：** 遮挡下的人脸识别技术综述<br>
+**作者：** Dan Zeng,  Luuk Spreeuwers<br>
+**链接：** https://arxiv.org/abs/2006.11366<br>
+
+本文共梳理193篇相关文献。遮挡下人脸识别能力有限是一个长期存在的问题，它对人脸识别系统甚至人类提出了独特的挑战。与其他挑战（例如姿势变化，不同表情等）相比，有关遮挡的问题未被研究覆盖。尽管如此，遮挡的脸部识别对于在现实应用中充分发挥脸部识别的潜力至关重要。本文将范围限制为遮挡人脸识别，首先探讨了什么是遮挡问题以及哪些固有的困难会出现，介绍了遮挡下的人脸检测，这是人脸识别的第一步。其次，文章介绍现有的面部识别方法如何解决遮挡问题并将其分为三类，即1）遮挡鲁棒特征提取方法，2）遮挡感知的面部识别方法和3）基于遮挡恢复的面部识别方法。<br>
+
+[OFR中涉及不同的遮挡人脸识别测试场景](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbkt91k7pj30ig0ecq4e.jpg)<br>
+
+<br><br>
+
+### 综述十
+
+**Biometric Quality: Review and Application to Face Recognition with FaceQnet**<br>
+**标题：** 生物特征质量：FaceQnet在人脸识别中的应用<br>
+**作者：** Javier Hernandez-Ortega, Laurent Beslay<br>
+**链接：** https://arxiv.org/abs/2006.03298<br>
+
+
+本文共梳理53篇相关文献。“计算机系统的输出只能与输入的信息一样准确。”这个相当琐碎的陈述是生物识别的驱动概念之一的基础：生物识别质量。如今，质量已被广泛认为是导致自动生物识别系统性能好坏的首要因素。这些算法在系统的正确运行中起着举足轻重的作用，向用户提供反馈并作为宝贵的审计工具。尽管它们被一致接受，但在这些方法的开发中却缺少一些最常用和最广泛使用的生物特征。本文通过开发FaceQnet解决了对更好的面部质量度量的需求。 FaceQnet是一种新颖的开源人脸质量评估工具，受深度学习技术的启发和支持，该工具为人脸图像分配了标量质量度量，以预测其识别精度。 NIST已在工作中以及独立地对FaceQnet的两个版本进行了全面评估，显示了该方法的合理性及其相对于当前最新技术指标的竞争力。<br>
+
+由NIST在2019年组织的FRVT-QA活动的结果的[简短摘要](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbl794y2dj30ja0isacf.jpg)，用于评估面部质量指标。<br>
+
+
+<br><br>
+
+### 综述十一
+
+**Threat of Adversarial Attacks on Face Recognition: A Comprehensive  Survey**<br>
+**标题：** 对抗攻击对人脸识别的威胁：综述<br>
+**作者：** Fatemeh Vakhshiteh,  Ahmad Nickabadi<br>
+**链接：** https://arxiv.org/abs/2007.11709<br>
+
+
+人脸识别（FR）系统已展示出出色的验证性能，表明适用于现实世界的应用程序，从社交媒体中的照片标记到自动边界控制（ABC）。但是，在具有基于深度学习的体系结构的高级FR系统中，仅提高识别效率是不够的，并且系统还应承受旨在针对其熟练程度而设计的潜在攻击。最近的研究表明，（较深的）FR系统对难以察觉或可感知但看起来自然的对抗输入图像表现出令人着迷的脆弱性，从而使模型无法正确预测输出。本文对针对FR系统的对抗性攻击进行了全面调查，并详细阐述了针对这些系统的新对策的能力。<br>
+
+
+[旨在欺骗FR系统的对抗性攻击产生方法的大致分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gnblak1zkej30zg0i6mxq.jpg)<br>
+
+<br><br>
+
+### 综述十二
+
+**Cross-ethnicity Face Anti-spoofing Recognition Challenge: A Review**<br>
+**标题：** 跨种族人脸反欺骗识别挑战：综述<br>
+**作者：** Ajian Liu, Stan Z. Li<br>
+**链接：** https://arxiv.org/abs/2004.10998![006C3FgEgy1gnblcxfjbvj31380e60ul](https://tva1.sinaimg.cn/large/006C3FgEgy1gnblcxfjbvj31380e60ul.jpg)<br>
+
+本文共梳理47篇相关文献。最近，一个多族裔面部反欺骗数据集CASIA-SURF CeFA已经发布，目的是测量种族偏见。它是涵盖3种种族，3种形态，1,607个主题，2D加3D攻击类型的最大的最新跨种族面部反欺骗数据集，并且是最近发布的面部反欺骗数据集中第一个包含显式种族标签的数据集。本文围绕这一新颖资源组织了Chalearn面部反欺骗攻击检测挑战赛，该挑战赛由单模式（例如RGB）和多模式（例如RGB，深度，红外（IR））轨道组成，以促进旨在缓解这种情况的研究种族偏见。在开发阶段，这两个轨道都吸引了340个团队，最后有11个和8个团队分别在单模式和多模式面部反欺骗识别挑战中提交了其代码。所有结果均由组委会进行了验证并重新运行，并将结果用于最终排名。本文概述了这一挑战，包括其设计，评估协议和结果摘要。<br>
+
+
+[多模式赛道的9个团队的ROC](https://tva1.sinaimg.cn/large/006C3FgEgy1gnble0rehqj312e0dgwgm.jpg)。 从左到右是协议4_1、4_2和4_3的ROC<br>
+
+[用于人脸反欺骗的多任务网络体系结构](https://tva1.sinaimg.cn/large/006C3FgEgy1gnblf2omszj30ik06w3zo.jpg)<br>
+
+<br><br>
+
+### 综述十三
+
+**The Creation and Detection of Deepfakes: A Survey**<br>
+**标题：** 深度伪装的产生与检测：综述<br>
+**作者：** Yisroel Mirsky, Wenke Lee<br>
+**链接：** https://arxiv.org/abs/2004.11138<br>
+
+本文共梳理193篇相关文献。生成式深度学习算法已经发展到难以分辨真假之间的区别的程度。 在2018年，人们发现将这种技术用于不道德和恶意的应用非常容易，例如错误信息的传播，政治领导人的冒充以及无辜者的诽谤。 从那时起，这些“深造假”就有了长足发展。在本文中，我们探讨了Deepfake的创建和检测，并提供了有关这些架构如何工作的深入视图。 这项调查的目的是使读者对（1）如何创建和检测深造假；（2）该领域的当前趋势和进步；（3）当前防御解决方案的缺点；以及（ 4）需要进一步研究和关注的领域。
+
+
+[Deepfake信息信任表](https://tva1.sinaimg.cn/large/006C3FgEgy1gnblrer74jj30i60figmb.jpg)<br>
+
+
+[对抗性机器学习与deepfake之间的区别](https://tva1.sinaimg.cn/large/006C3FgEgy1gnbltylia2j30es0igdg6.jpg)<br>
+
 
 
