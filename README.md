@@ -1,3 +1,5 @@
+> 推荐阅读：[survey-computer-vision（2021-2022）](https://github.com/extreme-assistant/survey-computer-vision-2021)
+
 # survey-computer-vision（2020-2021）
 
 ## 计算机视觉综述论文分方向整理（持续更新）<br>
